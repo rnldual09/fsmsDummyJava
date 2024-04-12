@@ -46,7 +46,7 @@ import org.egovframe.rte.ptl.mvc.tags.ui.pagination.PaginationRenderer;
  *
  */
 @Configuration
-@ComponentScan(basePackages = "egovframework", includeFilters = {
+@ComponentScan(basePackages = "fsms", includeFilters = {
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Service.class),
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Repository.class)
 }, excludeFilters = {
