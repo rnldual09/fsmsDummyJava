@@ -1,5 +1,7 @@
 package fsms.com.serviceImpl;
 
+import java.util.Map;
+
 import javax.annotation.Resource;
 
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
@@ -17,6 +19,11 @@ public class TestServiceImpl extends EgovAbstractServiceImpl implements TestServ
 	@Override
 	public String testConnection() throws Exception {
 		return testDao.testConnection();
+	}
+
+	@Override
+	public String getName(Map<String, Object> paramMap) throws Exception {
+		return testDao.getName(paramMap);
 	}
 
 }

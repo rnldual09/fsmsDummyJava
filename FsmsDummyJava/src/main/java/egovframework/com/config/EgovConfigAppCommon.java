@@ -72,6 +72,8 @@ public class EgovConfigAppCommon {
 		
 		reloadableResourceBundleMessageSource.setBasenames(
 			"classpath:/egovframework/message/com/message-common",
+			"classpath:/egovframework/message/com/message-common_en",
+			"classpath:/egovframework/message/com/message-common_ko",
 			"classpath:/org/egovframe/rte/fdl/idgnr/messages/idgnr",
 			"classpath:/org/egovframe/rte/fdl/property/messages/properties");
 		reloadableResourceBundleMessageSource.setCacheSeconds(60);

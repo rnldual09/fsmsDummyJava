@@ -4,8 +4,14 @@
 <mapper namespace="testDao">
 
 	<select id="testConnection" resultType="string">
-		SELECT 'TEST' AS TEST_CN
-		FROM DUAL
+		SELECT ID
+		FROM TB_TEST
+	</select>
+	
+	<select id="getName" resultType="string" parameterType="Map">
+		SELECT NAME
+		FROM TB_TEST
+		WHERE ID = #{id}
 	</select>
 	
 </mapper>
